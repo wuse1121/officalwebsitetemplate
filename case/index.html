@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>合作案例</title>
+    <meta name="keywords" content="网站关键词" />
+    <meta name="description" content="网站描述。" />
+    <meta name="author" content="CmsEasy Team" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link href="/common/css/bootstrap/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/common/font/simple/css/font.css" rel="stylesheet" type="text/css" />
+    <link href="/common/css/bootstrap/bootstrap-3.3.7/css/bootstrap-submenu.css" rel="stylesheet">
+    <link href="/common/plugins/swiper/css/swiper.min.css" rel="stylesheet">
+    <link href="/template/skin/css/clear.css" rel="stylesheet">
+    <link href="/template/skin/css/base.css?version=7631" rel="stylesheet">
+    <link href="/template/skin/css/style.css" rel="stylesheet">
+    <script src="/common/js/jquery/jquery.min.js"></script>
+    <script src="/common/js/jquery/jquery-migrate.min.js"></script>
+    <script src="/common/plugins/swiper/js/swiper.min.js"></script>
+
+    <style type="text/css">
+        .navbar {
+            padding-right: 0;
+            padding-left: 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+            border-radius: 0;
+        }
+
+        .visual-slide,
+        .cbanner,
+        .visual-swiper-slide {
+            margin-top: 70px;
+        }
+
+        @media screen and (max-width:486px) {
+            .navbar {
+                position: relative;
+            }
+
+            .visual-slide,
+            .cbanner,
+            .visual-swiper-slide {
+                margin-top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clearfix view-html">
+        <nav class="column navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false">
+                        <span class="sr-only">#[#get('sitename')#]#</span><span class="icon-bar"></span><span
+                            class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <div class="row" style="float: left;">
+                        <a href="" class="navbar-brand text-center"><img src="/images/logo.png" class="img-responsive"
+                                alt="中文网站名称" /></a>
+                    </div>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="oen active"><a href="/">首页</a></li>
+                        <li class="oen dropdown">
+                            <a href="/product-center/" class="toogle">
+                                产品中心 <span class="caret"></span></a>
+                            <ul class="two dropdown-menu">
+                                <li>
+                                    <a title="地热泵" href="/product-center/detail.html">地热泵</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="oen dropdown">
+                            <a href="/case" class="toogle">
+                                合作案例 <span class="caret"></span></a>
+                            <ul class="two dropdown-menu">
+                                <li>
+                                    <a title="珠宝展柜照明灯" href="/case/detail.html">珠宝展柜照明灯</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="oen dropdown">
+                            <a href="/news" class="toogle">
+                                最新动态 <span class="caret"></span></a>
+                            <ul class="two dropdown-menu">
+                                <li>
+                                    <a title="产品动态" href="/news/list.html">产品动态</a>
+                                </li>
+                                <li>
+                                    <a title="企业动态" href="/news/list.html">企业动态</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="oen dropdown">
+                            <a href="/about-us" class="toogle">
+                                关于我们 <span class="caret"></span></a>
+                            <ul class="two dropdown-menu">
+                                <li>
+                                    <a title="公司荣誉" href="/about-us/company-honour.html">公司荣誉</a>
+                                </li>
+                                <li>
+                                    <a title="公司简介" href="/about-us/company-info.html">公司简介</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="oen dropdown">
+                            <a href="/news/list.html" class="toogle">
+                                最新公告 <span class="caret"></span></a>
+                            <ul class="two dropdown-menu">
+                                <li>
+                                    <a title="活动/展会" href="/news/detail.html">活动/展会</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="cbanner row" style="height:250px;">
+        <div class="cbanner-bg">
+            <div class="container">
+                <div class="cbanner-title">
+                    <h4 class="column-title"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        //<!CDATA[
+        var bodyBgs = [];
+        bodyBgs[0] = "/images/banner/s3.jpg";
+        bodyBgs[1] = "/images/banner/s3.jpg";
+        bodyBgs[2] = "/images/banner/s3.jpg";
+        bodyBgs[3] = "/images/banner/s4.jpg";
+        bodyBgs[4] = "/images/banner/s4.jpg";
+        var randomBgIndex = Math.round(Math.random() * 4);
+        //输出随机的背景图
+        document.write('<style>.cbanner{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat 50% bottom;background-size:cover;}</style>');
+    //]]>
+    </script>
+    <div class="box2">
+        <div class="container">
+            <div class="title20">
+                <h4>合作案例</h4>
+            </div>
+            <div class="row column">
+                <div class="column-list">
+                    <ul>
+                        <li>
+                            <span>2020-04-22</span><a title="北京博物院" href="/case/detail.html" target="_blank">北京博物院</a>
+                        </li>
+                        <li>
+                            <span>2020-04-22</span><a title="弗雷德照明箱" href="/case/detail.html" target="_blank">弗雷德照明箱</a>
+                        </li>
+                        <li>
+                            <span>2020-04-22</span><a title="TISSOT照明箱" href="/case/detail.html"
+                                target="_blank">TISSOT照明箱</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column-pagination">
+                    <nav>
+                        <ul class="pagination">
+                            <li class="active"><a>1</a></li>
+                            <li class="pull-right">
+                                <input type="text" name="getto_page" id="getto_page" value="1" class="form-control "
+                                    oninput="value=value.replace(/[^\d]/g,'')">
+                                <input class="btn btn-primary" type="button" value="跳转" name="order"
+                                    onclick="getto_page()">
+                            </li>
+                            <script>
+                                function getto_page() {
+                                    var totlepage = '1';
+                                    totlepage = parseInt(totlepage);
+                                    var inpage = parseInt($('#getto_page').val());
+                                    if (inpage > totlepage) {
+                                        window.location = '/zhu-bao-zhan-gui-zhao-ming-deng';
+                                    }
+                                    else if (inpage < 1) {
+                                        window.location = '/zhu-bao-zhan-gui-zhao-ming-deng';
+                                    } else {
+                                        inpage = inpage + ".html";
+                                        window.location = '/zhu-bao-zhan-gui-zhao-ming-deng/' + inpage;
+                                    }
+                                }
+                            </script>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="foot-left">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div class="foot-ul">
+                                    <h4><a title="产品中心" href="/product-center" target="_blank">产品中心</a></h4>
+                                    <ul>
+                                        <li><a title="地热泵" href="/product-center/detail.html" target="_blank">地热泵</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div class="foot-ul">
+                                    <h4><a title="合作案例" href="/case" target="_blank">合作案例</a></h4>
+                                    <ul>
+                                        <li><a title="珠宝展柜照明灯" href="/case/detail.html" target="_blank">珠宝展柜照明灯</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="clearfix visible-xs-block"></div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div class="foot-ul">
+                                    <h4><a title="最新动态" href="/news" target="_blank">最新动态</a></h4>
+                                    <ul>
+                                        <li><a title="客户服务" href="/news/list.html" target="_blank">产品动态</a></li>
+                                        <li><a title="企业动态" href="/news/list.html" target="_blank">企业动态</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="clearfix visible-sm-block"></div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div class="foot-ul">
+                                    <h4><a title="关于我们" href="/about-us" target="_blank">关于我们</a></h4>
+                                    <ul>
+                                        <li><a title="公司荣誉" href="/about-us/company-honour.html"
+                                                target="_blank">公司荣誉</a></li>
+                                        <li><a title="公司简介" href="/about-us/company-info.html" target="_blank">公司简介</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="clearfix visible-xs-block"></div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div class="foot-ul">
+                                    <h4><a title="最新公告" href="/news/list.html" target="_blank">最新公告</a></h4>
+                                    <ul>
+                                        <li><a title="品牌介绍" href="/news/detail.html" target="_blank">品牌介绍</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="foot-right">
+                        <div class="foot-weixin">
+                            <img src="/images/w.gif" alt="官方微信">
+                            <p>官方微信</p>
+                        </div>
+                        <div class="foot-ul2">
+                            <ul>
+                                <li>地 址：某某股份有限公司</li>
+                                <li>电 话：400-400-4000011</li>
+                                <li>传 真：400-400-4000</li>
+                                <li>邮 箱：<a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                        data-cfemail="bfdedbd2d6d1ffdedbd2d6d191dcd0d2">[email&#160;protected]</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="foot-logo">
+                <a href=""><img src="../images/logo.png" alt=""></a>
+            </div>
+            <p>
+                Copyright ©<a href="http://show.1826.net/" target="_blank">中文网站名称</a>.<a rel="nofollow"
+                    href="http://www.beian.miit.gov.cn" rel="nofollow" target="_blank">京ICP备88888888号</a></p>
+        </div>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script type="text/javascript">
+
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+
+    </script>
+    <div class="servers">
+        <!--[if (gte IE 7)|!(IE)]><!-->
+
+        <style type="text/css">
+            .izl-rmenu {
+                position: fixed;
+                right: 0;
+                margin-right: 20px;
+                top: 25%;
+                padding-bottom: 0px;
+                z-index: 999;
+            }
+
+            .izl-rmenu .sbtn {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 1px;
+                cursor: pointer;
+                position: relative;
+            }
+
+            @media (max-width: 486px) {
+                .izl-rmenu {
+                    display: none;
+                }
+            }
+
+
+
+            .izl-rmenu .btn-qq {
+                background: url(/template/skin/images/servers/metro_blue/r_qq.png) 0px 0px no-repeat;
+                background-color: #06276a;
+                color: #FFF;
+            }
+
+            .izl-rmenu .btn-qq:hover {
+                background-color: #26c79d;
+                color: #FFF;
+            }
+
+            .izl-rmenu .btn-qq .qq {
+                background-color: #26c79d;
+                position: absolute;
+                width: 110px;
+                left: -115px;
+                top: 0px;
+                line-height: 38px;
+                padding: 15px 0px;
+                color: #FFF;
+                font-size: 18px;
+                text-align: center;
+                display: none;
+                border-radius: 10px 0px 10px 0px;
+                box-shadow: 0 5px 20px 0 #999;
+            }
+
+            .izl-rmenu .btn-qq a {
+                color: #FFF;
+                font-size: 14px;
+            }
+
+            .izl-rmenu .btn-wx {
+                background: url(/template/skin/images/servers/metro_blue/r_wx.png) 0px 0px no-repeat;
+                background-color: #06276a;
+            }
+
+            .izl-rmenu .btn-wx:hover {
+                background-color: #26c79d;
+            }
+
+            .izl-rmenu .btn-wx .pic {
+                position: absolute;
+                left: -160px;
+                top: 0px;
+                display: none;
+                width: 140px;
+                height: 140px;
+                box-shadow: 0 5px 20px 0 #999;
+            }
+
+            .izl-rmenu .btn-phone {
+                background: url(/template/skin/images/servers/metro_blue/r_phone.png) 0px 0px no-repeat;
+                background-color: #06276a;
+            }
+
+            .izl-rmenu .btn-phone:hover {
+                background-color: #26c79d;
+            }
+
+            .izl-rmenu .btn-phone .phone {
+                background-color: #ff811b;
+                position: absolute;
+                width: 160px;
+                left: -160px;
+                top: 0px;
+                line-height: 50px;
+                color: #FFF;
+                font-size: 18px;
+                text-align: center;
+                display: none;
+            }
+
+            .izl-rmenu .btn-ali {
+                background: url(/template/skin/images/servers/metro_blue/r_ali.png) 0px 0px no-repeat;
+                background-color: #06276a;
+            }
+
+            .izl-rmenu .btn-ali:hover {
+                background-color: #26c79d;
+            }
+
+            .izl-rmenu a.btn-ali,
+            .izl-rmenu a.btn-ali:visited {
+                background: url(/template/skin/images/servers/metro_blue/r_ali.png) 0px 0px no-repeat;
+                background-color: #06276a;
+                text-decoration: none;
+                display: block;
+            }
+
+
+            .izl-rmenu .btn-wangwang {
+                background: url(/template/skin/images/servers/metro_blue/r_wangwang.png) 0px 0px no-repeat;
+                background-color: #06276a;
+                background-size: 100% 100%;
+            }
+
+            .izl-rmenu .btn-wangwang:hover {
+                background-color: #26c79d;
+            }
+
+            .izl-rmenu a.btn-wangwang,
+            .izl-rmenu a.btn-wangwang:visited {
+                background: url(/template/skin/images/servers/metro_blue/r_wangwang.png) 0px 0px no-repeat;
+                background-color: #06276a;
+                text-decoration: none;
+                display: block;
+            }
+
+
+            .izl-rmenu .btn-skype {
+                background: url(/template/skin/images/servers/metro_blue/r_skype.png) 0px 0px no-repeat;
+                background-color: #06276a;
+            }
+
+            .izl-rmenu .btn-skype:hover {
+                background-color: #26c79d;
+            }
+
+            .izl-rmenu a.btn-skype,
+            .izl-rmenu a.btn-skype:visited {
+                background: url(/template/skin/images/servers/metro_blue/r_skype.png) 0px 0px no-repeat;
+                background-color: #06276a;
+                text-decoration: none;
+                display: block;
+            }
+
+            .izl-rmenu .btn-web {
+                background: url(/template/skin/images/servers/metro_blue/r_web.png) 0px 0px no-repeat;
+                background-color: #06276a;
+            }
+
+            .izl-rmenu a.btn-web,
+            .izl-rmenu a.btn-web:visited {
+                background: url(/template/skin/images/servers/metro_blue/r_web.png) 0px 0px no-repeat;
+                background-color: #06276a;
+                text-decoration: none;
+                display: block;
+            }
+
+            .izl-rmenu a.btn-web:hover {
+                background-color: #26c79d;
+            }
+
+            .izl-rmenu .btn-top {
+                background: url(/template/skin/images/servers/metro_blue/r_top.png) 0px 0px no-repeat;
+                background-color: #06276a;
+                display: none;
+            }
+
+            .izl-rmenu .btn-top:hover {
+                background-color: #26c79d;
+            }
+        </style>
+        <script language="javascript" type="text/javascript">
+            $(function () {
+                var tophtml = "<div id=\"izl_rmenu\" class=\"izl-rmenu\"><div class=\"sbtn btn-qq\"><div class=\"qq\"><a rel=\"nofollow\" target=\"_blank\" href=\"tencent://Message/?Uin=888888&websiteName=http://show.1826.net/=&Menu=yes\"><i class=\"icon-user\"></i>	客服一</a><br /><a rel=\"nofollow\" target=\"_blank\" href=\"tencent://Message/?Uin=888888&websiteName=http://show.1826.net/=&Menu=yes\"><i class=\"icon-user\"></i>	客服二</a><br /><a rel=\"nofollow\" target=\"_blank\" href=\"tencent://Message/?Uin=666&websiteName=http://show.1826.net/=&Menu=yes\"><i class=\"icon-user\"></i>	客服三</a></div></div><a rel=\"nofollow\" href=\"http://amos.im.alisoft.com/msg.aw?v=2&uid=mymoban&site=cntaobao&s=1&charset=utf-8\" target=\"_blank\" class=\"sbtn btn-wangwang\"></a><a rel=\"nofollow\" target=\"_blank\" href=\"skype:admin@admin.com?call\" target=\"_blank\" class=\"sbtn btn-skype\"></a><div class=\"sbtn btn-wx\"><img class=\"pic\" src=\"/images/w.gif\" onclick=\"window.location.href=\'http:\'\"/></div><div class=\"sbtn btn-phone\"><div class=\"phone\">400-400-4000011</div></div><div class=\"sbtn btn-top\"></div></div>";
+                $("#top").html(tophtml);
+                $("#izl_rmenu").each(function () {
+                    $(this).find(".btn-qq").mouseenter(function () {
+                        $(this).find(".qq").fadeIn("fast");
+                    });
+                    $(this).find(".btn-qq").mouseleave(function () {
+                        $(this).find(".qq").fadeOut("fast");
+                    });
+                    $(this).find(".btn-wx").mouseenter(function () {
+                        $(this).find(".pic").fadeIn("fast");
+                    });
+                    $(this).find(".btn-wx").mouseleave(function () {
+                        $(this).find(".pic").fadeOut("fast");
+                    });
+                    $(this).find(".btn-phone").mouseenter(function () {
+                        $(this).find(".phone").fadeIn("fast");
+                    });
+                    $(this).find(".btn-phone").mouseleave(function () {
+                        $(this).find(".phone").fadeOut("fast");
+                    });
+                    $(this).find(".btn-top").click(function () {
+                        $("html, body").animate({
+                            "scroll-top": 0
+                        }, "fast");
+                    });
+                });
+                var lastRmenuStatus = false;
+                $(window).scroll(function () {//bug
+                    var _top = $(window).scrollTop();
+                    if (_top > 200) {
+                        $("#izl_rmenu").data("expanded", true);
+                    } else {
+                        $("#izl_rmenu").data("expanded", false);
+                    }
+                    if ($("#izl_rmenu").data("expanded") != lastRmenuStatus) {
+                        lastRmenuStatus = $("#izl_rmenu").data("expanded");
+                        if (lastRmenuStatus) {
+                            $("#izl_rmenu .btn-top").slideDown();
+                        } else {
+                            $("#izl_rmenu .btn-top").slideUp();
+                        }
+                    }
+                });
+            });
+        </script>
+        <div id="top"></div>
+        <![endif]-->
+
+</div>
+<div class="servers-wap">
+<link href="/template/skin/css/wap/wap6.css" rel="stylesheet" />
+
+<style type="text/css">
+
+
+
+#plug-wrap {
+    position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0);
+    z-index:800;
+}
+.top_bar {
+    position:fixed;
+    bottom:0;
+    right:0px;
+    z-index:900;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: Helvetica, Tahoma, Arial, Microsoft YaHei, sans-serif;
+}
+.plug-menu {
+    -webkit-appearance:button;
+    display:inline-block;
+    width:36px;
+    height:36px;
+    border-radius:36px;
+    position: absolute;
+    bottom:17px;
+    right: 17px;
+    z-index:999;
+    box-shadow: 0 0 0 4px #FFFFFF, 0 2px 5px 4px rgba(0, 0, 0, 0.25);
+   
+    -webkit-transition: -webkit-transform 200ms;
+    -webkit-transform:rotate(1deg);
+    color:#fff;
+    background-image:url('/template/skin/images/wao/plug.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 80% auto;
+    background-size: 80% auto;
+    background-position: center center;
+}
+.plug-menu:before {
+    font-size:20px;
+    margin:9px 0 0 9px;
+}
+.plug-menu:checked {
+    -webkit-transform:rotate(135deg);
+}
+.top_menu>li {
+    width: 32px;
+    height:32px;
+    border-radius:32px;
+    box-shadow: 0 0 0 3px #FFFFFF, 0 2px 5px 3px rgba(0, 0, 0, 0.25);
+    
+    position:absolute;
+    bottom:0;
+    right:0;
+    margin-bottom: 20px;
+    margin-right:20px;
+    z-index:900;
+    -webkit-transition: -webkit-transform 200ms;
+}
+.top_menu>li a {
+    color:#fff;
+    font-size:20px;
+    display: block;
+    height: 100%;
+    line-height: 33px;
+    text-align: center;
+}
+.top_menu>li>a label{
+display:none;
+}
+.top_menu>li a img {
+display: block;
+width: 22px;
+height: 22px;
+text-indent: -999px;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -11px;
+margin-left: -11px;
+}
+.top_menu>li.on:nth-of-type(1) {
+-webkit-transform: translate(-0, -100px) rotate(720deg);
+}
+.top_menu>li.on:nth-of-type(2) {
+-webkit-transform: translate(-47px, -81px) rotate(720deg);
+}
+.top_menu>li.on:nth-of-type(3) {
+-webkit-transform: translate(-81px, -45px) rotate(720deg);
+}
+.top_menu>li.on:nth-of-type(4) {
+-webkit-transform: translate(-100px, 0) rotate(720deg);
+}
+ 
+#sharemcover {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.7);
+display: none;
+z-index: 20000;
+}
+#sharemcover img {
+position: fixed;
+right: 18px;
+top: 5px;
+width: 260px;
+height: 180px;
+z-index: 20001;
+border:0;
+}
+
+</style>
+<div class="top_bar" style="-webkit-transform:translate3d(0,0,0)">
+<nav>
+<ul id="top_menu" class="top_menu">
+<input type="checkbox" id="plug-btn" class="plug-menu themeStyle" style="background-image:url('/template/skin/images/wap/plug.png');border:0px;">
+<li class="themeStyle out">
+<a href="tel:400-400-4000011"><img src="/template/skin/images/wap/plugmenu1.png"><label>电 话</label></a>
+</li>
+<li class="themeStyle out">
+<a href="sms:18888888888"><img src="/template/skin/images/wap/plugmenu3.png"><label>短信</label></a>
+</li>
+<li class="themeStyle out">
+<a href="mqqwpa://im/chat?chat_type=wpa&uin=888888&version=1&src_type=web&web_src=http://show.1826.net/" id="btn_fenxiang"><img src="/template/skin/images/wap/plugmenu5.png"><label>QQ号码</label></a>
+</li>
+<li class="themeStyle out">
+<a href="/index.php?case=guestbook&act=index"><img src="/template/skin/images/wap/plugmenu6.png"><label>留言</label></a>
+</li>
+</ul>
+</nav>
+</div>
+<div id="plug-wrap" style="display: none;"></div>
+<script>
+    $(function () {
+        $(".plug-menu").click(function () {
+            var li = $(this).parents('ul').find('li');
+            if (li.attr("class") == "themeStyle on") {
+                li.removeClass("themeStyle on");
+                li.addClass("themeStyle out");
+            } else {
+                li.removeClass("themeStyle out");
+                li.addClass("themeStyle on");
+            }
+        });
+    });
+</script> </div>
+
+<script src="/common/plugins/lazyload/jquery.lazyload.min.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function () {
+        $("img.lazy,div.lazy").lazyload({
+            placeholder: "/images/pic.png",
+            effect: "fadeIn",//show直接显示,fadeIn显现
+            threshold: 180,
+            event: "scroll",
+            failure_limit: 2
+        });
+    })
+</script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            var top = $(".visual-slide,.banner,.banner2,.banner3,.banner4,.cbanner").offset().top; //获取指定位置
+            var scrollTop = $(window).scrollTop();  //获取当前滑动位置
+            if (scrollTop > top) {                 //滑动到该位置时执行代码
+                $(".navbar").addClass("active");
+            } else {
+                $(".navbar").removeClass("active");
+            }
+        });
+    });
+
+    $(function () {
+        var cubuk_seviye = $(document).scrollTop();
+        var header_yuksekligi = $('.navbar').outerHeight();
+
+        $(window).scroll(function () {
+            var kaydirma_cubugu = $(document).scrollTop();
+
+            if (kaydirma_cubugu > header_yuksekligi) { $('.navbar').addClass('gizle'); }
+            else { $('.navbar').removeClass('gizle'); }
+
+            if (kaydirma_cubugu > cubuk_seviye) { $('.navbar').removeClass('sabit'); }
+            else { $('.navbar').addClass('sabit'); }
+
+            cubuk_seviye = $(document).scrollTop();
+        });
+    });
+
+</script>
+
+<link rel="stylesheet" href="/common/plugins/animate/css/animate.min.css" />
+<script src="/common/plugins/animate/js/wow.min.js"></script>
+<script type="text/javascript">
+
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+        new WOW().init();
+    };
+
+</script>
+<script src="/common/plugins/shop/js/buyarchive.js"></script>
+<script src="/common/js/admin.js"></script>
+
+<script type="text/javascript">
+
+    $(function () {
+        $(".dropdown,.dropdown-submenu").mouseover(function () {
+            $(this).addClass("open");
+        });
+        $(".dropdown,.dropdown-submenu").mouseleave(function () {
+            $(this).removeClass("open");
+        })
+    });
+    $(document).ready(function () {
+        var _width = $(window).width();
+        if (_width < 768) {
+            $("#navbar a.toogle").click(function () {
+                event.preventDefault();
+            });
+        }
+    });
+
+</script>
+
+
+<script src="/common/css/bootstrap/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+<script src="/common/plugins/font-print/c_tool.js"></script>
+
+<link rel="stylesheet" href="/common/plugins/left_menu_list/left_menu_list.css">
+<script src="/common/plugins/left_menu_list/left_menu_list.js"></script>
+<script type="text/javascript">
+
+    var myswiper = new Swiper('.content-picture', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+        },
+        lazy: true,
+        loop: true,
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{
+    "status": true,
+    "message": "操作成功",
+    "data": [
+      {
+        "ID": "84faeea8-13a7-4ccf-80e8-169fbb2dc87c",
+        "Name": "首页",
+        "strUImodulars": []
+      },
+      {
+        "ID": "dc7ee8da-8d06-4988-8e7d-8b8c41895386",
+        "Name": "产品中心",
+        "strUImodulars": [
+          {
+            "ID": "3c95112a-76e3-40c2-b701-4721da40ade9",
+            "Name": "地热泵"
+          }
+        ]
+      },
+      {
+        "ID": "d2a68f8b-7de7-4adc-827c-9322eedda638",
+        "Name": "合作案例",
+        "strUImodulars": []
+      },
+      {
+        "ID": "b52d6807-e2b5-4623-8150-a001caa17fd7",
+        "Name": "最新动态",
+        "strUImodulars": [
+          {
+            "ID": "e03abcd0-13c6-4872-b48f-58704e80b001",
+            "Name": "产品动态"
+          },
+          {
+            "ID": "0cab34e3-a073-435f-8762-7e64c8a030e9",
+            "Name": "企业动态"
+          }
+        ]
+      },
+      {
+        "ID": "2fae9180-7827-4b43-a540-a399b6bcd7e5",
+        "Name": "关于我们",
+        "strUImodulars": [
+          {
+            "ID": "c189606e-f657-47fb-a491-3a9699250363",
+            "Name": "公司荣誉"
+          },
+          {
+            "ID": "4b5e7354-c1ba-4a75-b6cc-845c46bfeed9",
+            "Name": "公司简介"
+          }
+        ]
+      },
+      {
+        "ID": "efa1bf02-815d-42a9-b001-bd8522d9d595",
+        "Name": "最新公告",
+        "strUImodulars": []
+      }
+    ]
+  }
